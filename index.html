@@ -302,6 +302,12 @@
 
     <!-- Initialize Lucide Icons -->
     <script>
+        // API Configuration
+        const API_KEY = "Yb*d\\6AeM2I=/-LiCiN\\g~j8!ED<!cug"; // Replace with your actual API key
+        const BASE_URL = "https://rinneaibot.onrender.com";
+//BASE_URL = "https://api.rinneaiable.org"
+//BASE_URL = "https://rinneaibot.onrender.com"
+        
         lucide.createIcons();
         
         // Smooth scrolling for anchor links
@@ -380,17 +386,23 @@
             chatMessages.scrollTop = chatMessages.scrollHeight;
             
             try {
-                const res = await fetch("https://rinneaibot.onrender.com/api/chat", {
-                    method: "POST",
-                    headers: {
-                        "Content-Type": "application/json",
-                        "X-API-Key": "your-own-secret-key"
-                    },
-                    body: JSON.stringify({ message })
-                });
-
-                const data = await res.json();
+                const headers = {
+                    "Content-Type": "application/json",
+                    "X-API-Key": API_KEY
+                };
                 
+                const payload = {
+                    "message": message
+                };
+                
+                const res = await fetch(BASE_URL + "/api/chat", {
+                    method: "POST",
+                    headers: headers,
+                    body: JSON.stringify(payload)
+                });
+                
+                const data = await res.json();
+                console.log(data);
                 // Remove loading indicator
                 loadingDiv.remove();
                 
