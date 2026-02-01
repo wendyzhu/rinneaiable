@@ -19,9 +19,15 @@ export default function KnowledgeBaseChatbot() {
 
   // Initialize Fuse.js with fuzzy matching options
   const fuse = new Fuse(faqData, {
-    keys: ['question', 'answer'],
-    threshold: 0.4, // Lower threshold = more strict matching, higher = more fuzzy
+    keys: [
+      { name: 'question', weight: 0.7 },
+      { name: 'answer', weight: 0.3 }
+    ],
+    threshold: 0.35, // Lower threshold = more strict matching, higher = more fuzzy
     includeScore: true,
+    ignoreLocation: true,    // CRITICAL: Matches regardless of where the word is in the sentence
+    useExtendedSearch: true, // Allows for advanced matching like "include" instead of just "fuzzy"
+    //findAllMatches: true,
     minMatchCharLength: 2,
   })
 
@@ -44,18 +50,29 @@ export default function KnowledgeBaseChatbot() {
 
     const userMessage: Message = { type: 'user', text: inputValue.trim() }
     setMessages((prev) => [...prev, userMessage])
-    setInputValue('')
+    const originalInput = inputValue.trim();
+  setInputValue('');
 
-    // Search for matching FAQ
-    const results = fuse.search(inputValue.trim())
+  // STEP 1: Try a direct search with the full original string
+  let results = fuse.search(originalInput);
+
+  // STEP 2: Fallback to flexible OR logic ONLY if direct search is weak
+  if (results.length === 0 || (results[0].score && results[0].score > 0.3)) {
+    const flexibleQuery = originalInput.split(' ').join(' | ');
+    const flexibleResults = fuse.search(flexibleQuery);
+    
+    // Use the better result between the two
+    if (flexibleResults.length > 0 && (!results[0] || (flexibleResults[0].score || 1) < (results[0].score || 1))) {
+      results = flexibleResults;
+    }
+  }
     
     let botResponse: string
-    if (results.length > 0 && results[0].score && results[0].score < 0.6) {
-      // Good match found
-      botResponse = results[0].item.answer
-    } else {
-      // No good match, provide helpful response
-      botResponse = "I couldn't find an exact match for your question. Could you try rephrasing it? For example, you could ask about our services, pricing, or how to get started."
+    // Use a stricter threshold (0.4) to ensure accuracy
+  if (results.length > 0 && results[0].score !== undefined && results[0].score < 0.4) {
+    botResponse = results[0].item.answer;
+  } else {
+      botResponse = "I couldn't find a precise match. To help you better, could you ask about our website design, maintenance services, or custom AI solutions?";
     }
 
     setTimeout(() => {
