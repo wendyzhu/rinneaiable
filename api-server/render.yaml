@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: rinneaiable-api
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      # Add these in Render.com dashboard:
+      # - SENDGRID_API_KEY
+      # - SENDGRID_FROM_EMAIL
+      # - RECIPIENT_EMAIL

@@ -10,6 +10,11 @@ export const metadata: Metadata = {
   icons: {
     icon: '/images/rinne_icon.png', 
   },
+  viewport: {
+    width: 'device-width',
+    initialScale: 1,
+    maximumScale: 5,
+  },
   openGraph: {
     title: 'RINNE AIABLE LLC - Automating Complexity',
     description: 'We provide high-end technical solutions to automate complex workflows.',

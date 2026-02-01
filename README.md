@@ -47,6 +47,29 @@ This project is configured for static site generation (SSG) on Render.com. The `
 2. Render will automatically detect the configuration and deploy
 3. The site will be built as a static site and served from the `out` directory
 
+## Contact Form API Setup
+
+The contact form uses SendGrid to send emails. You need to deploy a separate API server:
+
+### Deploy API Server to Render.com
+
+1. **Create a new Web Service** on Render.com
+2. **Connect your GitHub repository**
+3. **Set the root directory** to `api-server`
+4. **Set build command**: `npm install`
+5. **Set start command**: `npm start`
+6. **Add environment variables**:
+   - `SENDGRID_API_KEY`: Your SendGrid API key
+   - `SENDGRID_FROM_EMAIL`: Your verified sender email in SendGrid
+   - `RECIPIENT_EMAIL`: The email where you want to receive form submissions
+   - `NODE_ENV`: `production`
+
+7. **Update your frontend** to point to the API URL:
+   - Set `NEXT_PUBLIC_API_URL` environment variable in your static site service
+   - Or update the default URL in `app/components/ContactSection.tsx`
+
+See `api-server/README.md` for more details.
+
 ## Project Structure
 
 ```
@@ -64,8 +87,12 @@ This project is configured for static site generation (SSG) on Render.com. The `
 │   ├── page.tsx                        # Main page
 │   ├── globals.css                     # Global styles
 │   └── sitemap.ts                      # Dynamic sitemap
+├── api-server/                         # Express API server for SendGrid
+│   ├── server.js                       # API server code
+│   ├── package.json
+│   └── README.md
+├── public/                             # Static assets
 ├── rinneai_faq.json                    # FAQ data source
-├── static/                             # Static assets
 └── next.config.js                      # Next.js configuration
 ```
 
