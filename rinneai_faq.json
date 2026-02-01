@@ -1,0 +1,59 @@
+[
+    {
+      "question": "What services does RinneAIable LLC provide?",
+      "answer": "RinneAIable LLC provides AI-powered workflow automation, custom AI chatbots, retrieval-augmented generation (RAG) systems, and custom website and landing page development for small and mid-sized businesses."
+    },
+    {
+      "question": "What industries does RinneAIable LLC work with?",
+      "answer": "RinneAIable LLC works with healthcare research, manufacturing, industrial services, chemical products, small family-owned businesses, and professional services."
+    },
+    {
+      "question": "What is an AI-enabled RAG chatbot?",
+      "answer": "A RAG chatbot combines large language models with a private knowledge base, allowing the chatbot to answer questions using your company’s documents, FAQs, manuals, and internal data instead of generic internet information."
+    },
+    {
+      "question": "Can you build a chatbot trained on our company documents?",
+      "answer": "Yes. RinneAIable LLC builds custom chatbots trained on your PDFs, websites, manuals, SOPs, and other approved business content using secure retrieval-augmented generation techniques."
+    },
+    {
+      "question": "Do you work with medical or scientific content?",
+      "answer": "Yes. RinneAIable LLC has experience supporting medical and scientific workflows, including AI-assisted content extraction and summarization for peer-reviewed journals and research teams."
+    },
+    {
+      "question": "Do you provide AI automation for internal workflows?",
+      "answer": "Yes. We design AI-driven automation for document processing, data extraction, report generation, email workflows, and internal knowledge retrieval."
+    },
+    {
+      "question": "What is VAPilot to JVIR?",
+      "answer": "VAPilot to JVIR is an AI-assisted workflow that helps extract and structure key information from Journal of Vascular and Interventional Radiology (JVIR) content to support visual abstracts and research workflows."
+    },
+    {
+      "question": "Do you build websites for small businesses?",
+      "answer": "Yes. RinneAIable LLC builds modern, mobile-friendly websites and landing pages for small and family-owned businesses, with optional AI chatbots and lead capture features."
+    },
+    {
+      "question": "Can you host and maintain the website?",
+      "answer": "Yes. We offer website hosting, monitoring, updates, and ongoing maintenance as an optional monthly service."
+    },
+    {
+      "question": "Do you offer custom pricing?",
+      "answer": "Yes. Pricing is based on project scope, complexity, integrations, and support needs. Fixed-price and monthly service options are available."
+    },
+    {
+      "question": "How long does a typical project take?",
+      "answer": "Small websites typically take 2–4 weeks. AI chatbot and automation projects usually take 3–6 weeks depending on data readiness and complexity."
+    },
+    {
+      "question": "Is my company data secure?",
+      "answer": "Yes. RinneAIable LLC follows best practices for data access control and uses secure, scoped data ingestion for AI systems. Client data is used only for the agreed project scope."
+    },
+    {
+      "question": "Do you provide ongoing support?",
+      "answer": "Yes. Ongoing support, updates, monitoring, and improvements are available through monthly service plans."
+    },
+    {
+      "question": "How can I get started?",
+      "answer": "You can get started by contacting RinneAIable LLC through the website contact form to schedule an initial consultation."
+    }
+  ]
+  

@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: rinneaiable
+    env: node
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    staticPublishPath: ./out
+    envVars:
+      - key: NODE_ENV
+        value: production

@@ -1,0 +1,99 @@
+# RINNE AIABLE LLC - Next.js Website
+
+A modern, SEO-optimized Next.js website for RINNE AIABLE LLC, featuring a knowledge base chatbot with fuzzy search capabilities.
+
+## Features
+
+- **SEO Optimized**: Semantic HTML, Metadata API, and FAQPage JSON-LD structured data
+- **Knowledge Base Chatbot**: Powered by Fuse.js for fuzzy matching of user questions
+- **Static Site Generation**: Configured for SSG deployment on Render.com
+- **Modern UI**: Built with Tailwind CSS and Lucide React icons
+- **Responsive Design**: Mobile-first, fully responsive layout
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js 18+ 
+- npm or yarn
+
+### Installation
+
+1. Install dependencies:
+```bash
+npm install
+```
+
+2. Run the development server:
+```bash
+npm run dev
+```
+
+3. Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## Building for Production
+
+```bash
+npm run build
+```
+
+This generates a static export in the `out` directory, ready for deployment.
+
+## Deployment on Render.com
+
+This project is configured for static site generation (SSG) on Render.com. The `render.yaml` file contains the deployment configuration.
+
+1. Connect your GitHub repository to Render.com
+2. Render will automatically detect the configuration and deploy
+3. The site will be built as a static site and served from the `out` directory
+
+## Project Structure
+
+```
+├── app/
+│   ├── components/
+│   │   ├── FAQStructuredData.tsx      # JSON-LD structured data for SEO
+│   │   ├── KnowledgeBaseChatbot.tsx   # FAQ chatbot with Fuse.js
+│   │   ├── Navigation.tsx
+│   │   ├── Hero.tsx
+│   │   ├── WhySection.tsx
+│   │   ├── SolutionsSection.tsx
+│   │   ├── ContactSection.tsx
+│   │   └── Footer.tsx
+│   ├── layout.tsx                      # Root layout with metadata
+│   ├── page.tsx                        # Main page
+│   ├── globals.css                     # Global styles
+│   └── sitemap.ts                      # Dynamic sitemap
+├── rinneai_faq.json                    # FAQ data source
+├── static/                             # Static assets
+└── next.config.js                      # Next.js configuration
+```
+
+## SEO Features
+
+- Semantic HTML5 elements (header, main, section, footer)
+- Metadata API for custom titles and descriptions
+- FAQPage JSON-LD structured data for rich snippets
+- Dynamic sitemap generation
+- Optimized images (when using next/image)
+
+## Chatbot Features
+
+The Knowledge Base Chatbot uses Fuse.js for fuzzy search, allowing users to find answers even with:
+- Typos and misspellings
+- Different word choices (e.g., "cost" matches "pricing")
+- Partial matches
+- Similar phrasing
+
+## Technologies Used
+
+- **Next.js 14** (App Router)
+- **React 18**
+- **TypeScript**
+- **Tailwind CSS**
+- **Fuse.js** (fuzzy search)
+- **Lucide React** (icons)
+
+## License
+
+© 2025 RINNE AIABLE LLC. All rights reserved.
