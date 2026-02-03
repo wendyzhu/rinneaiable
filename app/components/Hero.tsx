@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white py-3 sm:py-4 md:py-5" aria-label="Hero section">
+    <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white py-6 sm:py-8 md:py-10" aria-label="Hero section">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6 leading-tight px-2">
