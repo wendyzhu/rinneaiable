@@ -2,16 +2,16 @@ import Image from 'next/image'
 
 export default function Footer() {
   return (
-    <footer className="bg-slate-900 text-white py-8 sm:py-12">
+    <footer className="bg-slate-900 text-white py-4 sm:py-6">
       <div className="container mx-auto px-4 sm:px-6">
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 mb-6 sm:mb-8">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 mb-3 sm:mb-4">
           <div className="sm:col-span-2 md:col-span-1">
             <div className="flex items-center space-x-2 sm:space-x-3 mb-3 sm:mb-4">
               <Image 
                 src="/images/rinne_icon.png" 
                 alt="RINNE AIABLE LLC Logo" 
-                width={40} 
-                height={40} 
+                width={35} 
+                height={30} 
                 className="h-8 w-8 sm:h-10 sm:w-10"
               />
               <span className="text-base sm:text-xl font-bold">RINNE AIABLE LLC</span>
@@ -38,7 +38,7 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-        <div className="border-t border-slate-800 pt-8 text-center text-slate-400">
+        <div className="border-t border-slate-800 pt-4 text-center text-slate-400">
           <p>&copy; 2026 RINNE AIABLE LLC. All rights reserved.</p>
         </div>
       </div>

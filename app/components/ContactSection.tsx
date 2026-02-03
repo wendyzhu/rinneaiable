@@ -23,7 +23,7 @@ export default function ContactSection() {
 
     // Get API URL from environment variable or use default
     // In development, use localhost; in production, use the deployed API
-    const apiUrl = process.env.NEXT_PUBLIC_API_URL || 
+    const apiUrl = process.env.NEXT_EMAIL_API_URL || 
       (typeof window !== 'undefined' && window.location.hostname === 'localhost' 
         ? 'http://localhost:3001' 
         : 'https://rinneai-api.onrender.com')
@@ -67,17 +67,17 @@ export default function ContactSection() {
   }
 
   return (
-    <section id="contact" className="py-8 sm:py-12 bg-white">
+    <section id="contact" className="py-4 sm:py-6 bg-white" aria-labelledby="contact-heading">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="max-w-2xl mx-auto">
           <div className="text-center mb-6 sm:mb-8">
-            <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-2">Get In Touch</h2>
+            <h2 id="contact-heading" className="text-2xl sm:text-3xl font-bold text-slate-900 mb-2">Get In Touch</h2>
             <p className="text-base sm:text-lg text-slate-600 px-2">
               Ready to automate your complex workflows? Let&apos;s discuss your needs.
             </p>
           </div>
           <div className="bg-slate-50 rounded-xl p-4 sm:p-6 shadow-lg">
-            <form ref={formRef} className="space-y-4" onSubmit={handleSubmit}>
+            <form ref={formRef} className="space-y-4" onSubmit={handleSubmit} aria-label="Contact form">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
                   <label htmlFor="name" className="block text-sm font-semibold text-slate-700 mb-1">Name</label>

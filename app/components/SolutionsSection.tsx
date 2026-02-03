@@ -3,10 +3,10 @@ import { Stethoscope, MessageCircle, Building2, Handshake } from 'lucide-react'
 
 export default function SolutionsSection() {
   return (
-    <section id="solutions" className="py-8 sm:py-12 md:py-16 bg-slate-100">
+    <section id="solutions" className="py-4 sm:py-6 md:py-8 bg-slate-100" aria-labelledby="solutions-heading">
       <div className="container mx-auto px-4 sm:px-6">
-        <div className="text-center mb-8 sm:mb-12">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-slate-900 mb-2 sm:mb-4">Featured Solutions</h2>
+        <div className="text-center mb-4 sm:mb-6">
+          <h2 id="solutions-heading" className="text-2xl sm:text-3xl md:text-4xl font-bold text-slate-900 mb-2 sm:mb-4">Featured Solutions</h2>
           <p className="text-base sm:text-lg md:text-xl text-slate-600 max-w-2xl mx-auto px-2">
             Real-world applications of our automation expertise
           </p>
@@ -36,7 +36,11 @@ export default function SolutionsSection() {
           {/* VAPilot Card */}
           <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow">
             <div className="h-24 sm:h-28 md:h-32 bg-gradient-to-br from-blue-600 to-blue-800 flex items-center justify-center">
-              <Image src="/images/vapilot_icon.png" alt="VAPilot Logo" width={80} height={80} 
+              <Image 
+                src="/images/vapilot_icon.png" 
+                alt="VAPilot - Automated Visual Abstract Generation System for Medical Publishing" 
+                width={80} 
+                height={80} 
                 className="object-contain w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20"
               />
             </div>

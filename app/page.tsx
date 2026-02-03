@@ -4,11 +4,13 @@ import WhySection from './components/WhySection'
 import SolutionsSection from './components/SolutionsSection'
 import ContactSection from './components/ContactSection'
 import Footer from './components/Footer'
-import KnowledgeBaseChatbot from './components/KnowledgeBaseChatbot'
+import Chatbot from './components/Chatbot'
+import WebPageStructuredData from './components/WebPageStructuredData'
 
 export default function Home() {
   return (
     <>
+      <WebPageStructuredData />
       <header>
         <Navigation />
       </header>
@@ -19,7 +21,7 @@ export default function Home() {
         <ContactSection />
       </main>
       <Footer />
-      <KnowledgeBaseChatbot />
+      <Chatbot />
     </>
   )
 }

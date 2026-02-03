@@ -92,7 +92,7 @@ See `api-server/README.md` for more details.
 │   ├── package.json
 │   └── README.md
 ├── public/                             # Static assets
-├── rinneai_faq.json                    # FAQ data source
+├── rinneai_knowledgebase.json          # Knowledge base data source
 └── next.config.js                      # Next.js configuration
 ```
 

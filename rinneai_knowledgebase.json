@@ -1,0 +1,73 @@
+{
+  "company": {
+    "name": "RinneAIable LLC",
+    "description": "RinneAIable LLC is a technology firm specializing in AI-powered workflow automation, industry-specific AI tools, and intelligent chatbots designed to replace manual labor with scalable, precise, and cost-effective systems.",
+    "mission": "To help organizations scale operations intelligently by replacing repetitive manual work with AI-driven automation.",
+    "billing_model": "Project-based pricing"
+  },
+  "industries_served": [
+    {
+      "industry": "Small Businesses",
+      "details": "Websites, lead capture chatbots, internal automation tools, and AI-powered customer engagement systems."
+    },
+    {
+      "industry": "Healthcare",
+      "details": "Document processing, research assistance, knowledge retrieval, and workflow automation with a focus on accuracy and compliance."
+    },
+    {
+      "industry": "JVIR and Medical Publishing",
+      "details": "AI tools such as VAPilot that automate Visual Abstract creation and streamline editorial workflows."
+    },
+    {
+      "industry": "Manufacturing",
+      "details": "AI knowledge systems for SOPs, equipment manuals, safety documentation, and workforce training."
+    }
+  ],
+  "services": [
+    {
+      "name": "AI Workflow Automation",
+      "description": "Design and implementation of AI systems that automate repetitive tasks, document processing, and business workflows."
+    },
+    {
+      "name": "RAG Chatbot Development",
+      "description": "Custom Retrieval-Augmented Generation chatbots that answer questions using client-provided documents and knowledge bases."
+    },
+    {
+      "name": "Industry-Specific AI Tools",
+      "description": "Purpose-built AI tools such as VAPilot for domain-specific workflows."
+    },
+    {
+      "name": "Website Design and Hosting",
+      "description": "Custom websites with integrated AI chatbots, hosting, monitoring, and maintenance."
+    }
+  ],
+  "products": [
+    {
+      "name": "VAPilot",
+      "description": "An AI-powered tool designed for JVIR and medical journals that reduces the time required to create Visual Abstracts from hours to minutes.",
+      "benefits": [
+        "Accelerates editorial workflows",
+        "Reduces manual labor",
+        "Improves consistency and quality of visual abstracts"
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "question": "What types of businesses does RinneAIable work with?",
+      "answer": "RinneAIable works with small businesses, healthcare organizations, academic publishers, and manufacturing companies."
+    },
+    {
+      "question": "How does project-based pricing work?",
+      "answer": "Each engagement is scoped individually based on requirements, deliverables, and timeline, with a fixed project fee."
+    },
+    {
+      "question": "What is a RAG chatbot?",
+      "answer": "A RAG chatbot retrieves information from your documents and knowledge base to generate accurate, grounded responses."
+    },
+    {
+      "question": "Does RinneAIable provide long-term support?",
+      "answer": "Yes, optional maintenance and support plans are available after project completion."
+    }
+  ]
+}
