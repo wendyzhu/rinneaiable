@@ -3,7 +3,7 @@ import { Stethoscope, MessageCircle, Building2, Handshake } from 'lucide-react'
 
 export default function SolutionsSection() {
   return (
-    <section id="solutions" className="py-4 sm:py-6 md:py-8 bg-slate-100" aria-labelledby="solutions-heading">
+    <section id="solutions" className="scroll-mt-[76px] sm:scroll-mt-[88px] py-4 sm:py-6 md:py-8 bg-slate-100" aria-labelledby="solutions-heading">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="text-center mb-4 sm:mb-6">
           <h2 id="solutions-heading" className="text-2xl sm:text-3xl md:text-4xl font-bold text-slate-900 mb-2 sm:mb-4">Featured Solutions</h2>

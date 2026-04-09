@@ -152,7 +152,7 @@ export default function Chatbot({
           <div className="bg-blue-600 text-white px-6 py-4 rounded-t-xl flex items-center justify-between">
             <div className="flex items-center space-x-3">
               <MessageCircle className="w-5 h-5" />
-              <h3 className="font-semibold text-lg">Knowledge Base Chatbot</h3>
+              <h3 className="font-semibold text-lg">Ask RinneAI</h3>
             </div>
             <button
               onClick={() => setIsOpen(false)}

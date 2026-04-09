@@ -32,7 +32,7 @@ export default function Navigation() {
   }, [])
 
   return (
-    <nav className="bg-slate-900 text-white sticky top-0 z-50 shadow-lg">
+    <nav className="bg-slate-900 text-white fixed top-0 left-0 right-0 z-50 shadow-lg">
       <div className="container mx-auto px-4 sm:px-6 py-3">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2 sm:space-x-3">
@@ -41,7 +41,9 @@ export default function Navigation() {
               alt="RINNE AIABLE LLC Logo" 
               className="h-8 sm:h-10 w-auto"
             />
+            <a href="/">
             <span className="text-base sm:text-xl font-bold hidden sm:inline">RINNE AIABLE LLC</span>
+            </a>
           </div>
           
           {/* Desktop Navigation */}

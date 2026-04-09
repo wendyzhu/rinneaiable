@@ -67,7 +67,7 @@ export default function ContactSection() {
   }
 
   return (
-    <section id="contact" className="py-4 sm:py-6 bg-white" aria-labelledby="contact-heading">
+    <section id="contact" className="scroll-mt-[76px] sm:scroll-mt-[88px] py-4 sm:py-6 bg-white" aria-labelledby="contact-heading">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="max-w-2xl mx-auto">
           <div className="text-center mb-6 sm:mb-8">
